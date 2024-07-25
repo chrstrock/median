@@ -46,3 +46,20 @@ Accept: application/json
 
 ###
 DELETE {{host}}:{{port}}/articles/4
+
+###
+GET {{host}}:{{port}}/articles/2532523
+
+###Exception Handling
+POST {{host}}:{{port}}/articles
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "Let’s build a REST API with NestJS and Prisma.",
+  "description": "NestJS Series announcement.",
+  "body": "NestJS is one of the hottest Node.js frameworks around. In this series, you will learn how to build a backend REST API with NestJS, Prisma, PostgreSQL and Swagger.",
+  "published": true
+}
+
+
