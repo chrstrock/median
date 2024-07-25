@@ -20,13 +20,25 @@ Accept: application/json
     "published" : true
 }
 
+### POST with short title
+POST {{host}}:{{port}}/articles
+Content-Type: application/json
+Accept: application/json
+
+{
+   "title": "New",
+   "description": "This is a new article",
+    "body": "This is the body of the article",
+    "published" : true
+}
+
 ###
 PATCH {{host}}:{{port}}/articles/1
 Content-Type: application/json
 Accept: application/json
 
 {
-   "title": "Updated Article",
+   "title": "Temp",
    "description": "This is an updated article",
     "body": "This is the body of the updated article",
     "published" : true
