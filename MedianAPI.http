@@ -6,7 +6,7 @@ GET {{host}}:{{port}}/articles
 GET {{host}}:{{port}}/articles/drafts
 
 ### GET article with ID of 1
-GET {{host}}:{{port}}/articles/1
+GET {{host}}:{{port}}/articles/2
 
 ###
 POST {{host}}:{{port}}/articles
@@ -62,4 +62,5 @@ Accept: application/json
   "published": true
 }
 
-
+### GET user
+GET {{host}}:{{port}}/users/1
